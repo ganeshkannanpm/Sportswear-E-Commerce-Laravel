@@ -67,13 +67,17 @@ php artisan key:generate
 
 ### 4️⃣ Configure database
 
+For PostgreSQL, update your .env:
+
+```
 DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
 DB_PORT=5432
-DB_DATABASE=your_db
-DB_USERNAME=your_user
+DB_DATABASE=your_database_name
+DB_USERNAME=your_username
 DB_PASSWORD=your_password
 
+```
 ### 5️⃣ Run migrations
 
 ```bash
