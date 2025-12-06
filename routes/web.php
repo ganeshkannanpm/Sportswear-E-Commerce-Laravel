@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductsController;
@@ -21,3 +22,6 @@ Route::get('/products',[ProductsController::class,'index'])->name('home.products
 
 //Gallery page
 Route::get('/gallery',[GalleryController::class,'index'])->name('home.gallery');
+
+//Contact page
+Route::get('/contact',[ContactController::class,'index'])->name('home.contact');

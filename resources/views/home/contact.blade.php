@@ -1,140 +1,178 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Sportswear</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50">
+<x-layout>
+    <x-navbar />
 
-    <!-- Header Section -->
-    <section class="w-full bg-black text-white py-16 px-6 text-center">
-        <h1 class="text-4xl font-bold tracking-wide">Contact Us</h1>
-        <p class="mt-3 text-lg text-gray-300 max-w-xl mx-auto">
-            Have questions about our products, orders or partnerships?  
+    <body class="bg-gray-50">
+
+        <!-- Header Section -->
+        <section class="w-full bg-black text-white py-24 px-6 text-center relative overflow-hidden">
+
+    <!-- Subtle gradient overlay for depth -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-black opacity-50"></div>
+
+    <div class="relative z-10 max-w-2xl mx-auto">
+        <!-- Heading -->
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
+            Contact Us
+        </h1>
+
+        <!-- Description -->
+        <p class="mt-3 text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
+            Have questions about our products, orders, or partnerships?
             We’re here to help you stay active and perform your best.
         </p>
-    </section>
+
+        <!-- CTA Button -->
+        <a href="#contact-form" class="inline-block px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-full shadow-lg transition transform hover:scale-105">
+            Get in Touch
+        </a>
+    </div>
+
+    <!-- Decorative circles (optional) -->
+    <div class="absolute top-10 left-10 w-32 h-32 bg-red-600 opacity-20 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 right-10 w-48 h-48 bg-red-500 opacity-20 rounded-full blur-3xl"></div>
+</section>
 
 
-    <!-- Contact Section -->
-    <section class="py-16 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
 
-        <!-- Contact Form -->
-        <div class="bg-white p-8 rounded-2xl shadow-md">
-            <h2 class="text-2xl font-bold mb-6">Send Us a Message</h2>
+        <!-- Contact Section -->
+        <section class="py-16 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
 
-            <form class="space-y-5">
-                <div>
-                    <label class="block text-sm font-medium mb-2">Your Name</label>
-                    <input type="text" class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-black outline-none">
-                </div>
-
-                <div>
-                    <label class="block text-sm font-medium mb-2">Email Address</label>
-                    <input type="email" class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-black outline-none">
-                </div>
-
-                <div>
-                    <label class="block text-sm font-medium mb-2">Subject</label>
-                    <input type="text" class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-black outline-none">
-                </div>
-
-                <div>
-                    <label class="block text-sm font-medium mb-2">Message</label>
-                    <textarea rows="5" class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-black outline-none"></textarea>
-                </div>
-
-                <button class="w-full bg-black text-white py-3 rounded-xl text-lg font-semibold hover:bg-gray-800 transition">
-                    Send Message
-                </button>
-            </form>
-        </div>
-
-
-        <!-- Contact Info Section -->
-        <div class="space-y-8">
-
-            <!-- Store Info -->
+            <!-- Contact Form -->
             <div class="bg-white p-8 rounded-2xl shadow-md">
-                <h2 class="text-2xl font-bold mb-4">Our Contact Details</h2>
+                <h2 class="text-2xl font-bold mb-6">Send Us a Message</h2>
 
-                <p class="text-gray-600"><strong>Phone:</strong> +91 98765 43210</p>
-                <p class="text-gray-600"><strong>Email:</strong> support@sportswear.com</p>
-                <p class="text-gray-600"><strong>Address:</strong>  
-                    Sportswear India Pvt Ltd,  
-                    2nd Floor, Fitness Street, Chennai, India.
-                </p>
+                <form class="space-y-5">
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Your Name</label>
+                        <input type="text"
+                            class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-black outline-none">
+                    </div>
 
-                <h3 class="font-semibold text-lg mt-5">Business Hours</h3>
-                <ul class="text-gray-600 mt-2">
-                    <li>Mon – Fri: 9:00 AM – 7:00 PM</li>
-                    <li>Sat: 10:00 AM – 5:00 PM</li>
-                    <li>Sun: Closed</li>
-                </ul>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Email Address</label>
+                        <input type="email"
+                            class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-black outline-none">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Subject</label>
+                        <input type="text"
+                            class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-black outline-none">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Message</label>
+                        <textarea rows="5"
+                            class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-black outline-none"></textarea>
+                    </div>
+
+                    <button
+                        class="w-full bg-black text-white py-3 rounded-xl text-lg font-semibold hover:bg-gray-800 transition">
+                        Send Message
+                    </button>
+                </form>
             </div>
 
 
-            <!-- Social Media -->
-            <div class="bg-white p-8 rounded-2xl shadow-md">
-                <h2 class="text-xl font-bold mb-4">Connect With Us</h2>
+            <!-- Contact Info Section -->
+            <div class="space-y-8">
 
-                <div class="flex items-center gap-4 mt-3">
-                    <a href="#" class="text-blue-600 font-semibold hover:underline">Instagram</a>
-                    <a href="#" class="text-blue-600 font-semibold hover:underline">Facebook</a>
-                    <a href="#" class="text-blue-600 font-semibold hover:underline">Twitter</a>
+                <!-- Store Info -->
+                <div class="bg-white p-8 rounded-2xl shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Our Contact Details</h2>
+
+                    <p class="text-gray-600"><strong>Phone:</strong> +91 98765 43210</p>
+                    <p class="text-gray-600"><strong>Email:</strong> support@sportswear.com</p>
+                    <p class="text-gray-600"><strong>Address:</strong>
+                        Sportswear India Pvt Ltd,
+                        2nd Floor, Fitness Street, Chennai, India.
+                    </p>
+
+                    <h3 class="font-semibold text-lg mt-5">Business Hours</h3>
+                    <ul class="text-gray-600 mt-2">
+                        <li>Mon – Fri: 9:00 AM – 7:00 PM</li>
+                        <li>Sat: 10:00 AM – 5:00 PM</li>
+                        <li>Sun: Closed</li>
+                    </ul>
+                </div>
+
+
+                <!-- Social Media -->
+                <div class="bg-white p-8 rounded-2xl shadow-md">
+                    <h2 class="text-xl font-bold mb-4">Connect With Us</h2>
+
+                    <div class="flex items-center gap-4 mt-3">
+                        <!-- Facebook -->
+                <a href="#" class="p-2 bg-gray-800 rounded-full hover:bg-blue-700 transition">
+                    <svg class="w-5 h-5 text-white hover:text-black" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M22 12C22 6.477 17.523 2 12 2S2 6.477 2 12a10 10 0 008.44 9.874v-6.99H7.898v-2.884H10.44V9.845c0-2.52 1.492-3.911 3.777-3.911 1.094 0 2.238.195 2.238.195v2.456h-1.26c-1.243 0-1.63.772-1.63 1.562v1.87h2.773l-.443 2.884h-2.33v6.99A10 10 0 0022 12z" />
+                    </svg>
+                </a>
+                <!-- Twitter -->
+                <a href="#" class="p-2 bg-gray-800 rounded-full hover:bg-blue-500 transition">
+                    <svg class="w-5 h-5 text-white hover:text-black" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M19.633 7.581c.013.177.013.355.013.533 0 5.428-4.13 11.685-11.685 11.685-2.322 0-4.482-.678-6.296-1.844a8.233 8.233 0 005.96-1.667 4.122 4.122 0 01-3.849-2.861c.254.039.508.065.775.065.374 0 .748-.05 1.096-.143a4.118 4.118 0 01-3.297-4.042v-.051a4.14 4.14 0 001.86.522 4.118 4.118 0 01-1.272-5.494 11.675 11.675 0 008.457 4.287 4.643 4.643 0 01-.102-.944 4.118 4.118 0 017.124-2.813 8.233 8.233 0 002.61-.996 4.103 4.103 0 01-1.806 2.27 8.233 8.233 0 002.368-.64 8.845 8.845 0 01-2.056 2.13z" />
+                    </svg>
+                </a>
+                <!-- WhatsApp -->
+                <a href="https://wa.me/your-number-here" target="_blank"
+                    class="p-2 bg-gray-800 rounded-full hover:bg-green-500 transition">
+                    <svg class="w-5 h-5 text-white hover:text-black" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M20.52 3.48A11.88 11.88 0 0012.02 0C5.38 0 0 5.38 0 12.02c0 2.12.55 4.19 1.59 6.01L0 24l6.17-1.61A11.97 11.97 0 0012.02 24C18.66 24 24 18.62 24 12.02c0-3.19-1.24-6.2-3.48-8.54zM12.02 22a9.88 9.88 0 01-5.34-1.55l-.38-.23-3.65.96.97-3.55-.25-.37a9.93 9.93 0 01-1.57-5.36c0-5.46 4.45-9.9 9.92-9.9 2.65 0 5.14 1.03 7.01 2.9a9.88 9.88 0 012.91 7c0 5.46-4.45 9.9-9.92 9.9zm5.48-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.48-1.77-1.65-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01s-.52.07-.8.37c-.27.3-1.05 1.02-1.05 2.48s1.08 2.87 1.23 3.07c.15.2 2.12 3.23 5.14 4.52.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.18-1.42-.07-.12-.27-.2-.57-.35z" />
+                    </svg>
+                </a>
+                <!-- Instagram -->
+                <a href="https://instagram.com/your-username" target="_blank"
+                    class="p-2 bg-gray-800 rounded-full hover:bg-pink-500 transition">
+                    <svg class="w-5 h-5 text-white hover:text-black" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2c1.66 0 3 1.34 3 3s-1.34 3-3 3a3 3 0 110-6zm4.5-.75a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z" />
+                    </svg>
+                </a>
+                    </div>
                 </div>
             </div>
+        </section>
 
+        <!-- Google Map -->
+        <section class="mt-12">
+            <iframe class="w-full h-80" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28574.695665274186!2d77.06351252384732!3d8.400841020301026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05ae61ef0d5b75%3A0x66ec33d53dbbdcdd!2sNeyyattinkara%2C%20Kerala!5e1!3m2!1sen!2sin!4v1765013564056!5m2!1sen!2sin" 
+             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <!-- Support Icons / Features -->
+        <section class="py-16 bg-gray-50 border-t">
+    <div class="max-w-6xl mx-auto px-6 text-center grid md:grid-cols-3 gap-10">
+
+        <!-- Feature Card 1 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+            <img src="https://cdn-icons-png.flaticon.com/512/1483/1483336.png" class="w-16 h-16 mx-auto mb-4">
+            <h3 class="font-bold text-xl mb-2 text-gray-900">Fast Support</h3>
+            <p class="text-gray-500">We respond quickly to ensure smooth sports shopping.</p>
         </div>
 
-    </section>
-
-
-
-    <!-- Google Map -->
-    <section class="mt-12">
-        <iframe 
-            class="w-full h-80"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!...your-map-link..."
-            allowfullscreen="" 
-            loading="lazy">
-        </iframe>
-    </section>
-
-
-
-    <!-- Support Icons / Features -->
-    <section class="py-16 bg-white mt-12 border-t">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 px-6 text-center">
-
-            <div>
-                <img src="https://cdn-icons-png.flaticon.com/512/1483/1483336.png" class="w-14 mx-auto mb-3">
-                <h3 class="font-bold text-lg">Fast Support</h3>
-                <p class="text-gray-500">We respond quickly to ensure smooth sports shopping.</p>
-            </div>
-
-            <div>
-                <img src="https://cdn-icons-png.flaticon.com/512/709/709790.png" class="w-14 mx-auto mb-3">
-                <h3 class="font-bold text-lg">Secure Orders</h3>
-                <p class="text-gray-500">Your order & payment details stay secure.</p>
-            </div>
-
-            <div>
-                <img src="https://cdn-icons-png.flaticon.com/512/1040/1040230.png" class="w-14 mx-auto mb-3">
-                <h3 class="font-bold text-lg">Quality Sportswear</h3>
-                <p class="text-gray-500">Premium clothing, shoes, and gear for every athlete.</p>
-            </div>
-
+        <!-- Feature Card 2 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+            <img src="https://cdn-icons-png.flaticon.com/512/709/709790.png" class="w-16 h-16 mx-auto mb-4">
+            <h3 class="font-bold text-xl mb-2 text-gray-900">Secure Orders</h3>
+            <p class="text-gray-500">Your order & payment details stay secure.</p>
         </div>
-    </section>
+
+        <!-- Feature Card 3 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+            <img src="https://cdn-icons-png.flaticon.com/512/1040/1040230.png" class="w-16 h-16 mx-auto mb-4">
+            <h3 class="font-bold text-xl mb-2 text-gray-900">Quality Sportswear</h3>
+            <p class="text-gray-500">Premium clothing, shoes, and gear for every athlete.</p>
+        </div>
+
+    </div>
+</section>
+
+        <x-footer />
+    </body>
 
 
-    <!-- Footer -->
-    <footer class="bg-black text-white text-center py-6 mt-10">
-        <p>&copy; 2025 Sportswear. All Rights Reserved.</p>
-    </footer>
-
-</body>
-</html>
+</x-layout>
