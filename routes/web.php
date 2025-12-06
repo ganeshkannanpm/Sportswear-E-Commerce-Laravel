@@ -19,6 +19,7 @@ Route::get('/about',[AboutController::class,'index'])->name('home.about');
 
 //Products page
 Route::get('/products',[ProductsController::class,'index'])->name('home.products');
+Route::get('/product-details',[ProductsController::class,'showProductDetails'])->name('product.details');
 
 //Gallery page
 Route::get('/gallery',[GalleryController::class,'index'])->name('home.gallery');

@@ -1,30 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sportswear Product Details</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
+<x-layout>
+    <x-navbar />
 <body class="bg-gray-100">
 
     <!-- MAIN CONTAINER -->
-    <div class="max-w-7xl mx-auto p-6">
+    <div class="max-w-7xl mx-auto p-6 mt-20">
 
         <!-- PRODUCT DETAILS SECTION -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 bg-white p-6 rounded-xl shadow">
 
             <!-- LEFT: PRODUCT IMAGES -->
             <div>
-                <img src="https://via.placeholder.com/500x500" 
+                <img src="{{asset('images/Gym-T-shirt.jpg')}}" alt="Product 3"
                      class="rounded-xl w-full object-cover shadow" alt="Product Image">
 
                 <!-- Thumbnail images -->
                 <div class="flex gap-4 mt-4">
-                    <img src="https://via.placeholder.com/120" class="w-20 h-20 rounded-lg cursor-pointer border">
-                    <img src="https://via.placeholder.com/120" class="w-20 h-20 rounded-lg cursor-pointer border">
-                    <img src="https://via.placeholder.com/120" class="w-20 h-20 rounded-lg cursor-pointer border">
+                    <img src="{{asset('images/Gym-T-shirt.jpg')}}" class="w-20 h-20 rounded-lg cursor-pointer border">
+                    <img src="{{asset('images/Gym-T-shirt.jpg')}}" class="w-20 h-20 rounded-lg cursor-pointer border">
+                    <img src="{{asset('images/Gym-T-shirt.jpg')}}" class="w-20 h-20 rounded-lg cursor-pointer border">
                 </div>
             </div>
 
@@ -40,7 +33,7 @@
                 </div>
 
                 <!-- Price -->
-                <p class="text-3xl font-bold text-blue-600">₹1,499</p>
+                <p class="text-3xl font-bold text-red-600">₹1,499</p>
 
                 <p class="text-gray-700 leading-relaxed">
                     This premium sports t-shirt is made with breathable, moisture-wicking fabric designed 
@@ -70,7 +63,7 @@
 
                 <!-- Buttons -->
                 <div class="flex gap-4 pt-2">
-                    <button class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">
+                    <button class="bg-red-600 text-white px-6 py-3 rounded-lg shadow hover:bg-red-700">
                         Add to Cart
                     </button>
                     <button class="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700">
@@ -108,7 +101,7 @@
             </div>
 
             <!-- Add Review Button -->
-            <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+            <button class="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700">
                 Write a Review
             </button>
         </div>
@@ -121,27 +114,27 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
 
                 <div class="bg-white p-4 rounded-xl shadow hover:scale-105 transition">
-                    <img src="https://via.placeholder.com/250x250" class="rounded-lg w-full">
+                    <img src="{{asset('images/tanaphong.jpg')}}" alt="Product 3" class="w-full h-56 object-cover rounded-lg"> 
                     <h3 class="mt-2 font-semibold">Training Shorts</h3>
-                    <p class="text-blue-600 font-bold">₹999</p>
+                    <p class="text-red-600 font-bold">₹999</p>
                 </div>
 
                 <div class="bg-white p-4 rounded-xl shadow hover:scale-105 transition">
-                    <img src="https://via.placeholder.com/250x250" class="rounded-lg w-full">
+                    <img src="{{asset('images/tanaphong.jpg')}}" alt="Product 3" class="w-full h-56 object-cover rounded-lg"> 
                     <h3 class="mt-2 font-semibold">Sports Track Pants</h3>
-                    <p class="text-blue-600 font-bold">₹1,299</p>
+                    <p class="text-red-600 font-bold">₹1,299</p>
                 </div>
 
                 <div class="bg-white p-4 rounded-xl shadow hover:scale-105 transition">
-                    <img src="https://via.placeholder.com/250x250" class="rounded-lg w-full">
+                    <img src="{{asset('images/tanaphong.jpg')}}" alt="Product 3" class="w-full h-56 object-cover rounded-lg"> 
                     <h3 class="mt-2 font-semibold">Running Shoes</h3>
-                    <p class="text-blue-600 font-bold">₹2,499</p>
+                    <p class="text-red-600 font-bold">₹2,499</p>
                 </div>
 
                 <div class="bg-white p-4 rounded-xl shadow hover:scale-105 transition">
-                    <img src="https://via.placeholder.com/250x250" class="rounded-lg w-full">
+                    <img src="{{asset('images/tanaphong.jpg')}}" alt="Product 3" class="w-full h-56 object-cover rounded-lg"> 
                     <h3 class="mt-2 font-semibold">Sports Hoodie</h3>
-                    <p class="text-blue-600 font-bold">₹1,899</p>
+                    <p class="text-red-600 font-bold">₹1,899</p>
                 </div>
 
             </div>
@@ -150,4 +143,6 @@
     </div>
 
 </body>
-</html>
+<x-footer />
+
+</x-layout>

@@ -77,7 +77,7 @@
                             <span class="text-xl font-bold text-red-600">₹1,299</span>
                         </div>
                         <div class="mt-4 flex gap-3">
-                            <a href="#"
+                            <a href="{{ route('product.details') }}"
                                 class="flex-1 text-center bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition">View</a>
                             <button
                                 class="flex-1 bg-gray-900 text-white py-2 rounded-lg hover:bg-gray-800 transition">Add
@@ -95,7 +95,7 @@
                             <span class="text-xl font-bold text-red-600">₹1,799</span>
                         </div>
                         <div class="mt-4 flex gap-3">
-                            <a href="#"
+                            <a href="{{ route('product.details') }}"
                                 class="flex-1 text-center bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition">View</a>
                             <button
                                 class="flex-1 bg-gray-900 text-white py-2 rounded-lg hover:bg-gray-800 transition">Add
@@ -113,7 +113,7 @@
                             <span class="text-xl font-bold text-red-600">₹2,499</span>
                         </div>
                         <div class="mt-4 flex gap-3">
-                            <a href="#"
+                            <a href="{{ route('product.details') }}"
                                 class="flex-1 text-center bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition">View</a>
                             <button
                                 class="flex-1 bg-gray-900 text-white py-2 rounded-lg hover:bg-gray-800 transition">Add
@@ -131,7 +131,7 @@
                             <span class="text-xl font-bold text-red-600">₹499</span>
                         </div>
                         <div class="mt-4 flex gap-3">
-                            <a href="#"
+                            <a href="{{ route('product.details') }}"
                                 class="flex-1 text-center bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition">View</a>
                             <button
                                 class="flex-1 bg-gray-900 text-white py-2 rounded-lg hover:bg-gray-800 transition">Add
