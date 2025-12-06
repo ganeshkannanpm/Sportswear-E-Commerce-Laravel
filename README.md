@@ -36,9 +36,16 @@ This project is currently under development and aims to provide a smooth shoppin
 
 ## 🖼️ Screenshots
 
-| Page               | Preview                                                   |
-| ------------------ | --------------------------------------------------------- |
-| Home Page          | ![Home Page](screenshots/home.png)                        |
+| Page                  | Preview                                                   |
+| --------------------- | --------------------------------------------------------- |
+| Home Page             | ![Home Page](screenshots/home.png)                        |
+| About Page            | ![About Page](screenshots/about.png)                      |
+| Products Page         | ![Products Page](screenshots/products.png)                |
+| Gallery Page          | ![Gallery Page](screenshots/gallery.png)                  |
+| Contact Page          | ![Contact Page](screenshots/contact.png)                  |
+| Product Details Page  | ![Product Details Page](screenshots/products-details.png) |
+| Cart Page             | ![Cart Page](screenshots/cart.png)                        |
+| Checkout Page         | ![Checkout Page](screenshots/checkout.png)                |
 
 ---
 
