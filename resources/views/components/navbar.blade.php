@@ -19,8 +19,10 @@
             <li><a href="{{ route('home.products') }}" class="block px-4 py-2 rounded-full hover:text-gray-100
                             {{ request()->routeIs('home.products') ? 'bg-red-600 text-white font-bold'
     : 'hover:bg-red-600 hover:text-gray-200' }}">Products</a></li>
+     <li><a href="{{ route('home.gallery') }}" class="block px-4 py-2 rounded-full hover:text-gray-100
+                            {{ request()->routeIs('home.gallery') ? 'bg-red-600 text-white font-bold'
+    : 'hover:bg-red-600 hover:text-gray-200' }}">Gallery</a></li>
 
-            <li><a href="#gallery" class=" no-underline hover:underline hover:text-red-600">Gallery</a></li>
             <li><a href="#contact" class=" no-underline hover:underline hover:text-red-600">Contact</a></li>
         </ul>
 

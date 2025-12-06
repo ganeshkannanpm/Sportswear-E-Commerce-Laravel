@@ -77,7 +77,7 @@
         style="background-image: url('{{asset('images/banner1.png')}}');">
 
         <!-- Red overlay -->
-        <div class="absolute inset-0 bg-red-700/80"></div>
+        <div class="absolute inset-0 bg-gray-700/80"></div>
 
         <div class="relative container mx-auto px-6 md:px-12 lg:px-20 text-center text-white">
 

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductsController;
 use Illuminate\Support\Facades\Route;
@@ -17,3 +18,6 @@ Route::get('/about',[AboutController::class,'index'])->name('home.about');
 
 //Products page
 Route::get('/products',[ProductsController::class,'index'])->name('home.products');
+
+//Gallery page
+Route::get('/gallery',[GalleryController::class,'index'])->name('home.gallery');
