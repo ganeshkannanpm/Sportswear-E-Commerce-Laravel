@@ -43,7 +43,7 @@ This project is currently under development and aims to provide a smooth shoppin
 | Products Page         | ![Products Page](screenshots/products.png)                |
 | Gallery Page          | ![Gallery Page](screenshots/gallery.png)                  |
 | Contact Page          | ![Contact Page](screenshots/contact.png)                  |
-| Product Details Page  | ![Product Details Page](screenshots/products-details.png) |
+| Product Details Page  | ![Product Details Page](screenshots/product-details.png)  |
 | Cart Page             | ![Cart Page](screenshots/cart.png)                        |
 | Checkout Page         | ![Checkout Page](screenshots/checkout.png)                |
 
