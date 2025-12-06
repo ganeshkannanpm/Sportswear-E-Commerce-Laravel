@@ -12,14 +12,14 @@
         <ul class="hidden md:flex space-x-6 text-gray-700 font-medium">
             <li><a href="{{ route('home.index') }}" class="block px-4 py-2 rounded-full hover:text-gray-100
                             {{ request()->routeIs('home.index') ? 'bg-red-600 text-white font-bold'
-    : 'hover:bg-red-600 hover:text-gray-200' }}">Home</a>
-            </li>
+    : 'hover:bg-red-600 hover:text-gray-200' }}">Home</a></li>
             <li><a href="{{ route('home.about') }}" class="block px-4 py-2 rounded-full hover:text-gray-100
                             {{ request()->routeIs('home.about') ? 'bg-red-600 text-white font-bold'
-    : 'hover:bg-red-600 hover:text-gray-200' }}">About</a>
-            </li>
+    : 'hover:bg-red-600 hover:text-gray-200' }}">About</a></li>
+            <li><a href="{{ route('home.products') }}" class="block px-4 py-2 rounded-full hover:text-gray-100
+                            {{ request()->routeIs('home.products') ? 'bg-red-600 text-white font-bold'
+    : 'hover:bg-red-600 hover:text-gray-200' }}">Products</a></li>
 
-            <li><a href="#services" class=" no-underline hover:underline hover:text-red-600">Products</a></li>
             <li><a href="#gallery" class=" no-underline hover:underline hover:text-red-600">Gallery</a></li>
             <li><a href="#contact" class=" no-underline hover:underline hover:text-red-600">Contact</a></li>
         </ul>
