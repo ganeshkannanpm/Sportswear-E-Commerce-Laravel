@@ -20,4 +20,9 @@ class ProductsController extends Controller
 
         return view('home.cart');
     }
+
+    public function showCheckout(){
+
+        return view('home.checkout');
+    }
 }

@@ -27,7 +27,7 @@
             <li>
                 <a href="{{ route('home.products') }}"
                     class="block px-5 py-2 rounded-full transition duration-300 
-                  {{ request()->routeIs('home.products','product.details','show.cart') ? 'bg-red-600 text-white shadow-lg' : 'hover:bg-red-600 hover:text-white' }}">
+                  {{ request()->routeIs('home.products','product.details','show.cart','show.checkout') ? 'bg-red-600 text-white shadow-lg' : 'hover:bg-red-600 hover:text-white' }}">
                     Products
                 </a>
             </li>

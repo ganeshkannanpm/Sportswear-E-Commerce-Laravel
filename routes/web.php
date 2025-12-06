@@ -21,6 +21,7 @@ Route::get('/about',[AboutController::class,'index'])->name('home.about');
 Route::get('/products',[ProductsController::class,'index'])->name('home.products');
 Route::get('/product-details',[ProductsController::class,'showProductDetails'])->name('product.details');
 Route::get('/show-cart',[ProductsController::class,'showCart'])->name('show.cart');
+Route::get('/show-checkout',[ProductsController::class,'showCheckout'])->name('show.checkout');
 
 //Gallery page
 Route::get('/gallery',[GalleryController::class,'index'])->name('home.gallery');

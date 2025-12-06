@@ -72,7 +72,7 @@
                             Add to Cart
                         </a>
 
-                        <a href="#"
+                        <a href="{{ route('show.checkout') }}"
                             class="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 inline-block ml-2">
                             Buy Now
                         </a>
