@@ -50,10 +50,10 @@
 
         <!-- Desktop Auth Buttons -->
         <div class="hidden md:flex space-x-4">
-            <a href="#"
+            <a href="{{ route('register') }}"
                 class="text-gray-100 px-4 py-2 rounded-full bg-red-600 font-semibold hover:text-gray-100  hover:bg-red-700">Sign
                 Up</a>
-            <a href="#"
+            <a href="{{ route('login') }}"
                 class="text-gray-100 font-semibold px-4 py-2 rounded-full bg-red-600 hover:text-gray-100 hover:bg-red-700">Login</a>
         </div>
 

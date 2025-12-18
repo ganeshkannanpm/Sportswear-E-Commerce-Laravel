@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomeController;
@@ -10,6 +12,12 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+
+//Register
+Route::get('/register',[RegisterController::class,'index'])->name('register');
+
+//Login
+Route::get('/login',[LoginController::class,'index'])->name('login');
 
 //Home page
 Route::get('/',[HomeController::class,'index'])->name('home.index');
